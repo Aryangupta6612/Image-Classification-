@@ -20,9 +20,9 @@ function init() {
         
         const API_URL = 'https://your-render-app-name.onrender.com/classify_image';
 
-        $.post(url, {
+        $.post(API_URL, {
             image_data: file.dataURL
-        },function(data, status) {
+        }, function(data, status) {
             /* 
             Below is a sample response if you have two faces in an image lets say virat and roger together.
             Most of the time if there is one person in the image you will get only one element in below array
